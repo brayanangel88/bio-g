@@ -1,0 +1,39 @@
+/* Contenedor de productos */
+.product-list {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas si es necesario */
+    gap: 16px; /* Espacio entre los elementos */
+    justify-content: center; /* Centra los elementos horizontalmente */
+  }
+  
+  /* Elemento individual del producto */
+  .product-item {
+    flex: 1 1 200px; /* Flexibilidad: crece y se reduce según el espacio disponible */
+    border: 1px solid #ddd;
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #f9f9f9; /* Color de fondo opcional */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+  }
+  
+  /* Estilo para la imagen del producto */
+  .product-item img {
+    width: 100%; /* Ajusta al ancho del contenedor */
+    height: auto; /* Mantiene la relación de aspecto */
+    border-radius: 4px; /* Bordes redondeados opcionales */
+  }
+  
+  /* Estilo para el nombre del producto */
+  .product-item h3 {
+    font-size: 1.25rem; /* Tamaño de fuente */
+    margin: 8px 0; /* Espacio alrededor del texto */
+    color: #333; /* Color del texto */
+  }
+  
+  /* Estilo para la descripción del producto */
+  .product-item p {
+    font-size: 1rem; /* Tamaño de fuente */
+    color: #555; /* Color del texto */
+  }
+  
