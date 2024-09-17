@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ProductComponent } from './views/product/product.component';
+import { HomeComponent } from './views/home/home.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/product', pathMatch: 'full' }, // Redirecciona a la ruta por defecto
-  { path: 'product', component: ProductComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' }, // Redirecciona a la ruta por defecto
+  { path: 'home', component: HomeComponent },
   { path: '**', redirectTo: '/home' }
 ];
 @NgModule({

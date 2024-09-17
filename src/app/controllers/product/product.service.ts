@@ -12,19 +12,19 @@ export class ProductService {
       id: 1,
       name: 'Te Verde',
       description: 'Description of Product 1',
-      imageUrl: '../../../assets/images/1.jpeg'
+      imageUrl: null
     },
     {
       id: 2,
       name: 'Proteina',
       description: 'Description of Product 2',
-      imageUrl: '' // Imagen vacía para probar el pipe defaultImage
+      imageUrl: '../../../assets/images/proteina-product.jpeg'
     },
     {
       id: 3,
       name: 'Colageno',
       description: 'Description of Product 3',
-      imageUrl: null 
+      imageUrl: '../../../assets/images/colageno-product.jpeg'
     }
   ];
 

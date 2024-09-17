@@ -5,7 +5,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class DefaultImagePipe implements PipeTransform {
 
-  transform(value: string | null | undefined, defaultImage: string = '../../../assets/images/default-image.png'): string {
+  transform(value: string | null | undefined, defaultImage: string = '../../../assets/images/default-image.webp'): string {
     debugger;
     return value ? value : defaultImage;
   }

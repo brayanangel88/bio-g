@@ -1,8 +1,13 @@
-<div class="product-list">
-    <div *ngFor="let product of products" class="product-item">
-      <img [src]="product.imageUrl | defaultImage" alt="{{ product.name }}">
-      <h3>{{ product.name }}</h3>
-      <p>{{ product.description }}</p>
-    </div>
+
+  <div class="product-list">
+    <mat-card *ngFor="let product of products" class="product-item">
+      <img mat-card-image [src]="product.imageUrl | defaultImage" alt="{{ product.name }}" class="img">
+      <mat-card-content>
+        <strong>{{ product.name }}</strong>
+        <p>{{ product.description }}</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button class="button" mat-button><strong style="font-size: 11.5px;">Ver Detalles </strong></button>
+      </mat-card-actions>
+    </mat-card>
   </div>
-  

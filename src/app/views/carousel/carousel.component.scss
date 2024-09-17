@@ -1,0 +1,9 @@
+.carousel-item img {
+    object-fit: cover; // Ajusta la imagen para que cubra el contenedor sin distorsionarse
+  }
+  
+  .carousel-caption {
+    background: rgba(0, 0, 0, 0.5); // Fondo semitransparente para el texto de la imagen
+    color: #fff;
+  }
+  
