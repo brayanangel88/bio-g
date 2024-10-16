@@ -13,6 +13,19 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SwiperModule } from 'ngx-swiper-wrapper';
 import { CarouselComponent } from './carousel/carousel.component';
 import { HomeComponent } from './home/home.component';
+import { CreateProductComponent } from './admin/create-product/create-product.component';
+import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { AdminProductComponent } from './admin/admin-product/admin-product.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatTableModule } from '@angular/material/table';
+import { EditProductDialogComponent } from './admin/edit-product-dialog/edit-product-dialog.component';
+import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
+import { LoginDialogComponent } from './login-dialog/login-dialog.component';
+import { RegisterUserComponent } from './register-user/register-user.component';
+
 
 
 
@@ -22,8 +35,13 @@ import { HomeComponent } from './home/home.component';
     DefaultImagePipe,
     NavbarComponent,
     CarouselComponent,
-    HomeComponent 
-
+    HomeComponent,
+    CreateProductComponent,
+    AdminProductComponent,
+    EditProductDialogComponent,
+    ConfirmDialogComponent,
+    LoginDialogComponent,
+    RegisterUserComponent 
   ],
   imports: [
     BrowserAnimationsModule, // Importa BrowserAnimationsModule
@@ -32,7 +50,13 @@ import { HomeComponent } from './home/home.component';
     MatToolbarModule,
     MatIconModule,
     CommonModule,
-    SwiperModule
+    SwiperModule,
+    BrowserModule,
+    MatFormFieldModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    MatTableModule,
+    MatDialogModule,
   ],
   exports: [
     NavbarComponent,

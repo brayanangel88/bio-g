@@ -1,0 +1,51 @@
+.form{
+    margin: 10%;
+}
+mat-form-field{
+    margin: 10px;
+}
+.form {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo del formulario */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+    padding: 20px; /* Espaciado interno */
+}
+
+.mat-card-title {
+    color: rgba(180, 131, 33, 1); 
+    font-weight: bold; 
+}
+
+.mat-form-field {
+    width: 100%; 
+}
+
+.mat-label {
+    color: rgba(180, 131, 33, 0.8); 
+}
+
+.mat-form-field-appearance-fill .mat-form-field-fill {
+    background-color: rgba(180, 131, 33, 0.1); 
+}
+
+.mat-form-field-appearance-fill .mat-form-field-outline {
+    border-color: rgba(180, 131, 33, 0.5); 
+}
+
+.mat-form-field-appearance-fill .mat-form-field-label {
+    color: rgba(180, 131, 33, 0.6); 
+}
+
+.mat-input-element {
+    color: rgba(0, 0, 0, 0.87); 
+}
+
+button.mat-raised-button {
+    background-color: rgba(180, 131, 33, 0.5); 
+    color: white; 
+    border-radius: 4px; 
+}
+
+button.mat-raised-button:hover {
+    background-color: rgba(180, 131, 33, 0.7); 
+}

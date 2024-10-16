@@ -1,7 +1,21 @@
-<mat-toolbar class="navbar" class="fixed-toolbar" >
-    <mat-toolbar-row style="height: 100%;">
+<mat-toolbar  class="fixed-toolbar" >
+    <mat-toolbar-row class="navbar">
       <img src="../../../assets/images/logo.png" alt="" class="imagen">
       <span class="example-spacer"></span>
-      <mat-icon>shopping_cart</mat-icon>
+      <button mat-icon-button *ngIf="!login">
+        <mat-icon>add_shopping_cart</mat-icon>
+      </button>
+      <button mat-icon-button *ngIf="!login" (click)="openLoginModal()">
+        <mat-icon>accessibility</mat-icon>
+      </button>
+      <button mat-icon-button *ngIf="login" (click)="openAdminProduct()">
+        <mat-icon>subject</mat-icon>
+      </button>
+      <button mat-icon-button *ngIf="login" (click)="openNewProduct()">
+        <mat-icon>fiber_new</mat-icon>
+      </button>
+      <button mat-icon-button *ngIf="login" (click)="onLogout()">
+        <mat-icon>power_settings_new</mat-icon>
+      </button>
     </mat-toolbar-row>
   </mat-toolbar>

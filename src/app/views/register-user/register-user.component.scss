@@ -1,0 +1,23 @@
+.registration-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 10%;
+  }
+  
+  .registration-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px; /* Ajusta el ancho del formulario */
+  }
+  
+  .dialog-buttons {
+    display: flex;
+    justify-content: space-between; /* Espaciado entre botones */
+  }
+  mat-card{
+    background-color: rgba(180, 131, 33, 0.1);
+  }
+
+  

@@ -6,8 +6,10 @@
     flex: 1 1 auto;
   }
   .navbar{
-        border-bottom: 1px solid rgba(180, 131, 33, 0.5); /* Un borde rojo con 50% de transparencia */
-  }
+        height: 100%;
+        border-bottom: 2px solid rgba(180, 131, 33, 0.5);
+        background-color: white;
+      }
   .imagen{
     height: 100%;
     width: 11%;
@@ -16,10 +18,13 @@
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000; // Asegura que el navbar esté por encima del contenido
+    z-index: 1000; 
   }
   mat-icon{
     margin-right: 3%;
     font-size: 46px;
-  color:rgba(180, 131, 33, 1) ;
+    color:rgba(180, 131, 33, 1) ;
+  }
+  button {
+    margin-right: 28px; /* Ajusta el valor según el espacio que desees */
   }

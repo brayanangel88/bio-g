@@ -1,0 +1,41 @@
+<div mat-dialog-content class="registration-container">
+    <mat-card class="registration-card">
+      <mat-card-header>
+        <mat-card-title>Registro</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <form [formGroup]="registrationForm" (ngSubmit)="onRegister()" class="registration-form">
+          <mat-form-field>
+            <mat-label>Nombre</mat-label>
+            <input matInput formControlName="name" required>
+          </mat-form-field>
+  
+          <mat-form-field>
+            <mat-label>Correo Electrónico</mat-label>
+            <input matInput type="email" formControlName="email" required>
+          </mat-form-field>
+  
+          <mat-form-field>
+            <mat-label>Número Telefónico</mat-label>
+            <input matInput type="tel" formControlName="phone" required>
+          </mat-form-field>
+  
+          <mat-form-field>
+            <mat-label>Contraseña</mat-label>
+            <input matInput type="password" formControlName="password" required>
+          </mat-form-field>
+  
+          <mat-form-field>
+            <mat-label>Dirección</mat-label>
+            <textarea matInput formControlName="address" required></textarea>
+          </mat-form-field>
+  
+          <div mat-dialog-actions class="dialog-buttons">
+            <button mat-button type="submit">Registrarse</button>
+            <button mat-button (click)="onCancel()">Cancelar</button>
+          </div>
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  

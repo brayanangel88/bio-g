@@ -1,0 +1,31 @@
+/* login-dialog.component.css */
+
+.mat-dialog-title {
+    color:  rgba(180, 131, 33, 1);
+    padding: 16px;
+    text-align: center;
+    border-bottom: 1px solid rgba(180, 131, 33, 0.5);
+}
+
+.mat-dialog-content {
+    padding: 20px;
+}
+
+.mat-form-field {
+    width: 100%; /* Hacer que los campos del formulario ocupen todo el ancho */
+}
+
+button {
+    background-color: rgba(180, 131, 33, 1); /* Color del botón */
+    color: white; /* Color del texto del botón */
+}
+
+button:hover {
+    background-color: rgba(150, 100, 20, 1); /* Color del botón al pasar el ratón */
+}
+.dialog-buttons {
+    display: flex;
+    justify-content: center; /* Centra los botones horizontalmente */
+    gap: 8px; /* Espacio opcional entre los botones */
+    width: 100%; /* Asegura que ocupe el ancho completo */
+  }

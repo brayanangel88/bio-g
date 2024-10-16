@@ -1,0 +1,35 @@
+@use '@angular/material' as mat;
+
+// Define la paleta `primary`
+$custom-primary: mat.define-palette(
+  (
+    500: rgba(180, 131, 33, 0.5),
+    contrast: (
+      500: rgba(0, 0, 0, 0.87), // Ajusta el contraste del texto
+    )
+  )
+);
+
+// Define una paleta `accent` (puedes cambiar los colores si lo deseas)
+$custom-accent: mat.define-palette(mat.$pink-palette);
+
+// Define una paleta `warn` (opcional, pero recomendado)
+$custom-warn: mat.define-palette((
+  500: #ff6a00, // Cobre
+  contrast: (
+    500: white,
+  )
+));
+
+// Define el tema personalizado
+$custom-theme: mat.define-light-theme((
+  color: (
+    primary: $custom-primary,
+    accent: $custom-accent,
+    warn: $custom-warn,
+  )
+));
+
+// Incluye los temas y tipografías globales
+@include mat.all-component-typographies($custom-theme);
+@include mat.all-component-themes($custom-theme);

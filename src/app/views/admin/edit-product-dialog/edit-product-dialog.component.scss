@@ -1,0 +1,44 @@
+
+.mat-card-title {
+    color: rgba(180, 131, 33, 1); /* Color del título */
+    font-weight: bold; /* Negrita para el título */
+}
+
+.mat-dialog-content {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo del contenido del diálogo */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+}
+
+.mat-form-field {
+    width: 100%; /* Ancho completo de los campos */
+    margin-bottom: 16px; /* Espacio entre los campos */
+}
+
+.mat-label {
+    color: rgba(33, 175, 186, 0.8); /* Color de las etiquetas */
+}
+
+.mat-form-field-appearance-fill .mat-form-field-fill {
+    background-color: rgba(180, 131, 33, 0.1); /* Fondo de los campos */
+}
+
+.mat-form-field-appearance-fill .mat-form-field-outline {
+    border-color: rgba(180, 131, 33, 0.5); /* Borde de los campos */
+}
+
+.mat-input-element {
+    color: rgba(0, 0, 0, 0.87); /* Color del texto en los campos */
+}
+
+button.mat-button {
+    background-color: rgba(180, 131, 33, 0.5); /* Fondo del botón */
+    color: white; /* Color del texto del botón */
+    margin-right: 8px; /* Espacio entre botones */
+    border-radius: 4px; /* Bordes redondeados del botón */
+}
+
+button.mat-button:hover {
+    background-color: rgba(180, 131, 33, 0.7); /* Color al pasar el ratón */
+}
+
